@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>JavaScript Fun</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Md Imran Hossain"/>
+        <script src="newjavascript.js"></script>
+        
+        <style>
+            body {
+                background-color: ghostwhite;
+            }
+            p    {
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            textarea {
+                height: 100%; 
+                width: 100%; 
+                overflow: scroll; 
+                white-space: nowrap;
+            }
+            div.textbox{
+                width: calc(50% - 10px); 
+                height: calc(100vh - 85px); 
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <input type="file" name = "file" accept=".csv" id="inputCSVFile" onchange="parseCSV(this.files)" />
+        </div>
+        <div class="textbox" style=" float:left">
+            <p >Input CSV</p>
+            <textarea id="input" ></textarea> 
+        </div>
+        <div class="textbox" style=" display: inline-block; float: right">
+            <p >Output CSV</p>
+            <textarea id="output"></textarea> 
+        </div>
+    </body>
+</html>
